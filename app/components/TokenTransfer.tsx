@@ -23,7 +23,6 @@ export default function TokenTransfer() {
   const [amount, setAmount] = useState('')
   const [isLoading, setIsLoading] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
-  const { address } = useAccount()
 
   const handleTransfer = async () => {
     if (!window.ethereum) {

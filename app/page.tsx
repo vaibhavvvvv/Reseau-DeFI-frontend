@@ -1,4 +1,3 @@
-import ConnectButton from './components/ConnectButton'
 import TokenInfo from './components/TokenInfo'
 import TokenTransfer from './components/TokenTransfer'
 import TokenApproval from './components/TokenApproval'
