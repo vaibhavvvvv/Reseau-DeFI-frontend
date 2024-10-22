@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { useAccount } from 'wagmi'
 import { parseEther, createWalletClient, custom, encodeFunctionData } from 'viem'
 import { polygonAmoy } from 'viem/chains'
 
