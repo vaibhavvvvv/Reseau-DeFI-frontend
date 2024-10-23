@@ -70,6 +70,7 @@ export default function TokenApproval() {
   const handleApprove = async () => {
     if (!window.ethereum || !address) {
       console.error('MetaMask not detected or not connected')
+      setButtonClicked(true)
       return
     }
 

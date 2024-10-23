@@ -54,6 +54,7 @@ export default function TokenTransfer() {
       })
 
       console.log('Transaction hash:', hash)
+      setButtonClicked(true)
       setIsSuccess(true)
     } catch (error) {
       console.error('Error sending transaction:', error)

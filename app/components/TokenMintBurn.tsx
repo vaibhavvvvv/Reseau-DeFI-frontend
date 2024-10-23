@@ -69,10 +69,7 @@ export default function TokenMintBurn() {
     }
   }
 
-  const getGradientClass = () => 
-    operation === 'mint' 
-      ? 'from-blue-500 to-blue-700' 
-      : 'from-red-500 to-red-700'
+ 
 
   const getButtonClass = (buttonOperation: 'mint' | 'burn') =>
     `px-4 py-2 rounded-md font-medium transition-colors ${
