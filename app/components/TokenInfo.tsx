@@ -83,9 +83,9 @@ export default function TokenInfo() {
   }
 
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-4">
-        <h2 className="text-2xl font-bold text-white flex items-center">
+    <div className="bg-[#EBE1D8] shadow-[-10px_10px_0_0_#000000] m-4 rounded-lg overflow-hidden">
+      <div className="p-4">
+        <h2 className="text-2xl font-bold text-[#373737] flex items-center border-b border-[#373737]">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>

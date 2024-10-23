@@ -123,9 +123,9 @@ export default function TokenTransactionHistory() {
   }
 
   return (
-    <div className="bg-white shadow-md rounded-lg overflow-hidden">
-      <div className="bg-gradient-to-r from-teal-500 to-teal-700 p-4">
-        <h2 className="text-2xl font-bold text-white flex items-center">
+    <div className="bg-[#EBE1D8] shadow-[-10px_10px_0_0_#000000] m-4 rounded-lg overflow-hidden">
+      <div className="p-4">
+        <h2 className="text-2xl font-bold text-[#373737] flex items-center border-b border-[#373737]">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
           </svg>

@@ -18,14 +18,14 @@ export default function Sidebar() {
     <>
       {/* Mobile top bar */}
       <div className="lg:hidden">
-        <div className="bg-white border-b border-gray-200 p-4 flex justify-between items-center">
+        <div className="bg-[#EBE1D8] border-b border-[#373737] p-4 flex justify-between items-center">
           <div className="flex items-center">
-            <svg className="h-8 w-8 text-blue-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg className="h-8 w-8 text-black mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
             </svg>
-            <h1 className="text-xl font-bold text-gray-800">Reseau De-Finance</h1>
+            <h1 className="text-xl font-bold text-[#373737]">Reseau De-Finance</h1>
           </div>
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-gray-800">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-[#373737] hover:text-black">
             <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               {isOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -36,14 +36,14 @@ export default function Sidebar() {
           </button>
         </div>
         {isOpen && (
-          <div className="bg-white shadow-lg">
+          <div className="bg-[#EBE1D8] shadow-lg">
             <nav>
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className={`flex items-center px-4 py-3 text-gray-600 hover:bg-gray-100 ${
-                    pathname === item.href ? 'bg-gray-100 text-blue-600 border-l-4 border-blue-600' : ''
+                  className={`flex items-center px-4 py-3 text-[#373737] hover:bg-[#F3EDE8] ${
+                    pathname === item.href ? 'bg-[#F3EDE8] text-black border-l-4 border-black' : ''
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -62,20 +62,20 @@ export default function Sidebar() {
       </div>
 
       {/* Desktop sidebar */}
-      <div className="hidden lg:block bg-white border-r border-gray-200 w-64 h-screen shadow-sm fixed">
+      <div className="hidden lg:block bg-[#EBE1D8] border-r border-[#373737] w-64 h-screen shadow-sm fixed">
         <div className="p-6 flex items-center">
-          <svg className="h-10 w-10 text-blue-600 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg className="h-10 w-10 text-black mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
           </svg>
-          <h1 className="text-2xl font-bold text-gray-800">Reseau De-Finance</h1>
+          <h1 className="text-2xl font-bold text-[#373737]">Reseau De-Finance</h1>
         </div>
         <nav className="mt-6">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.href}
-              className={`flex items-center px-6 py-3 text-gray-600 hover:bg-gray-100 transition-colors duration-200 ${
-                pathname === item.href ? 'bg-gray-100 text-blue-600 border-r-4 border-blue-600' : ''
+              className={`flex items-center px-6 py-3 text-[#373737] hover:bg-[#F3EDE8] transition-colors duration-200 ${
+                pathname === item.href ? 'bg-[#F3EDE8] text-black border-r-4 border-black' : ''
               }`}
             >
               <svg className="h-5 w-5 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
