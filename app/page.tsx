@@ -3,6 +3,7 @@ import TokenTransfer from './components/TokenTransfer'
 import TokenApproval from './components/TokenApproval'
 import TokenMintBurn from './components/TokenMintBurn'
 import TokenTransactionHistory from './components/TokenTransactionHistory'
+import TokenSwap from './components/TokenSwap'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
           <TokenTransactionHistory />
         </div>
       </div>
+      <TokenSwap />
     </div>
   )
 }

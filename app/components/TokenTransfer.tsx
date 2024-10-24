@@ -83,7 +83,7 @@ export default function TokenTransfer() {
             placeholder="0x..."
             value={to}
             onChange={(e) => setTo(e.target.value)}
-            style={{ backgroundColor: 'var(--ck-body-background)' }}
+            // style={{ backgroundColor: 'var(--ck-body-background)' }}
           />
         </div>
         <div>
@@ -95,7 +95,7 @@ export default function TokenTransfer() {
             placeholder="0.0"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            style={{ backgroundColor: 'var(--ck-body-background)' }}
+            // style={{ backgroundColor: 'var(--ck-body-background)' }}
           />
         </div>
         <button
